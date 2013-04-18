@@ -1,0 +1,8 @@
+-- Fix erreur consol Gameobject_template
+UPDATE `gameobject_template` SET `data1` = '1599' WHERE `entry` IN (195525,211086,211087,211093,6100000,6100001,6100002,6100003,6100004,6100005,6100006,6100007,6100008,6100009,6100010,206506,202314,280000);
+UPDATE `gameobject_template` SET `data0` = '1599' WHERE `entry` IN (206531);
+UPDATE `gameobject_template` SET `data3` = '1' WHERE `entry` IN (211107,211108,211109,211110,211111,211112,208044,208045);
+DELETE FROM `gameobject_template` WHERE `entry` IN (208325,205877,205876);
+
+
+

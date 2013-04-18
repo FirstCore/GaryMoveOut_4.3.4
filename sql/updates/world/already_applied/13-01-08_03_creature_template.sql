@@ -1,0 +1,34 @@
+-- Fix erreur consol creature_template
+
+UPDATE `creature_template` SET `ScriptName`='npc_winter_reveler' WHERE `entry`=15760;
+UPDATE `creature_template` SET `ScriptName`='npc_fire_elemental' WHERE `entry`=15438;
+UPDATE `creature_template` SET `ScriptName`='npc_earth_elemental' WHERE `entry`=15352;
+UPDATE `creature_template` SET `ScriptName`='npc_firework',`AIName`='',`faction_A`=35,`faction_H`=35,`unit_flags`=33555200 WHERE `entry` IN (15879,15880,15881,15882,15883,15884,15885,15886,15887,15888,15889,15890,15872,15873,15874,15875,15876,15877,15911,15912,15913,15914,15915,15916,15918);
+UPDATE `creature_template` SET `ScriptName`= 'npc_generic_harpoon_cannon' WHERE `entry` IN (27714,30066,30337);
+UPDATE creature_template SET scriptname = 'npc_magma_trap', faction_A = 14, faction_H = 14 WHERE entry = 53086;
+UPDATE creature_template SET scriptname = 'npc_sulfuras_hammer' WHERE entry = 53420;
+UPDATE creature_template SET scriptname = 'npc_engulfing_flame' WHERE entry = 53485;
+UPDATE `creature_template` SET `minlevel`=87, `maxlevel`=87, `faction_A`=16, `faction_H`=16, `speed_walk`=0.1428571, `speed_run`=1, `baseattacktime`=2000, `rangeattacktime`=2000, `unit_flags`=33554432, scriptname = 'npc_son_of_flame' WHERE `entry`=53140;
+UPDATE `creature_template` SET `RegenHealth`=0,`ScriptName`='npc_omen' WHERE `entry`=15467;
+UPDATE `creature_template` SET `ScriptName`='npc_giant_spotlight' WHERE `entry`=15902;
+UPDATE `creature_template` SET `ScriptName` = 'npc_simon_bunny',`flags_extra` = 130 WHERE `entry`=22923;
+UPDATE `creature_template` SET `ScriptName`='npc_image_belgaristrasz' WHERE `entry`=28012;
+UPDATE `creature_template` SET `ScriptName`='npc_pool_of_tar' WHERE `entry`=33090;
+UPDATE `creature_template` SET `ScriptName`='npc_living_constellation' WHERE `entry`=33052;
+UPDATE `creature_template` SET `ScriptName`='npc_collapsing_star' WHERE `entry`=32955;
+UPDATE `creature_template` SET `ScriptName`='npc_brann_bronzebeard_algalon' WHERE `entry`=34064;
+UPDATE `creature_template` SET `ScriptName`='npc_frost_tomb' WHERE `entry`=23965;
+UPDATE `creature_template` SET `ScriptName`='npc_vrykul_skeleton' WHERE `entry`=23970;
+UPDATE `creature_template` SET `ScriptName`='npc_ritual_channeler' WHERE `entry`=27281;
+UPDATE `creature_template` SET `ScriptName`='npc_spectator' WHERE `entry`=26667;
+UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_scourge_hulk' WHERE `entry`=26555;
+UPDATE `creature_template` SET `Scriptname`='npc_sylvanas_hor_part1' WHERE `entry`=37223;
+UPDATE `creature_template` SET `Scriptname`='npc_jaina_hor_part1' WHERE `entry`=37221;
+UPDATE `creature_template` SET `ScriptName`='npc_gas_cloud' WHERE `entry`=37562;
+UPDATE `creature_template` SET `InhabitType`=4,`flags_extra`=128,`unit_flags`=0x2000000,`ScriptName`='npc_arthas_teleport_visual' WHERE `entry`=30298;
+UPDATE `creature_template` SET `ScriptName`='npc_scourge_prisoner' WHERE `entry`=25610;
+UPDATE `creature_template` SET `ScriptName` = 'npc_tournament_training_dummy' WHERE `entry` IN (33272,33229,33243);
+UPDATE `creature_template` SET `ScriptName`= 'npc_wg_queue' WHERE `entry` IN (32169,32170,35599,35596,35600,35601,35598,35603,35602,35597,35612,35611);
+UPDATE `creature_template` SET `ScriptName`= 'npc_wg_spirit_guide' WHERE `entry` IN (31841,31842);
+UPDATE `creature_template` SET `ScriptName`= 'npc_wg_demolisher_engineer' WHERE `entry` IN (30400,30499);
+UPDATE `creature_template` SET `ScriptName`= 'npc_wg_quest_giver' WHERE `entry` IN (31054,31091,31036,31101,31051,31153,31151,31102,31106);
